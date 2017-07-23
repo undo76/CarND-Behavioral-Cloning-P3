@@ -144,6 +144,10 @@ I load diferent training sessions and concatenate them. `data2` is recorded on t
 
 Due to the nature of the problem there are lots of samples where no steering is performed, i.e. while driving in a straight line. I have found that removing these samples improves the performance of the model. 
 
+![hist1]
+
+![hist2]
+
 In order to reduce the size of the samples and consequently the model, I have considered convenient to remove the top and the bottom parts of the images. This will remove useless information and help the model to generalize better. It also hides the hood of the car that could be used by the model to cheat and guess the camera that was used.
 
 The cropping process is incorporated into the model, using a `Cropping2D` layer from Keras. After some experimentation, I decided to crop 75 pixels from the top and 25 pixels from the bottom.
