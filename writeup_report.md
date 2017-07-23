@@ -155,3 +155,9 @@ The cropping process is incorporated into the model, using a `Cropping2D` layer 
 ![crop]
 
 After the cropping, the images are standarized, scaling their values to the range [-0.5, 0.5]. For this, a Keras `Lambda` layer is used.
+
+
+## Sample videos
+
+* [This is a full autonomous lap to the first circuit](./run91-1.mp4). No human intervantion at all.
+* [This is a full autonomous lap to the second circuit](./run91.mp4). I had to correct once the trajectory after crashing, near the end of the video. :-(
